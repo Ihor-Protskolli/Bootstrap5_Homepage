@@ -19,6 +19,12 @@ img {
   height: auto !important;
 }
 
+h1 {
+  font-family: var(--font-cursive);
+}
+/* basE */
+
+/* Carousel */
 .my-carousel .carousel-item {
   display: flex;
   max-height: 680px;
@@ -27,14 +33,149 @@ img {
 .my-carousel .carousel-item img {
   object-fit: cover;
 }
-/* basE */
+/* carouseL */
 
 /* about-section */
-
-.about-section h1 {
-  font-family: var(--font-cursive);
-}
 
 .about-content {
   width: 560px;
 }
+
+/* Services-section */
+
+/* Team-section */
+
+.team-card p {
+  font-size: 1.5rem;
+}
+
+.team-card span {
+  font-size: 1.25rem;
+}
+
+.team-card h5 {
+  font-family: var(--font-cursive);
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card-body img {
+  min-width: 50%;
+  max-height: 275px;
+}
+
+/* contact-section */
+
+.contact-container {
+  width: 85%;
+  padding: 45px;
+  border-radius: 0;
+  left: 50%;
+  top: 50%;
+}
+
+.contact-section .row {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 30px;
+}
+
+.contact-section .col-md-7 {
+  padding: 20px;
+}
+.contact-section .right-side {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  padding: 20px;
+  color: #fff !important;
+  border-radius: 11% 50% 10% 51% / 15% 40% 10% 99%;
+  margin-left: auto;
+}
+
+.contact-section a,
+.contact-section i {
+  text-decoration: none;
+  color: #fff !important;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+
+  margin-left: 33px;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  height: 52px;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  border-radius: 2px;
+  box-sizing: none !important;
+  border: 1px solid black;
+}
+
+.form-submit-btn {
+  padding: 0.7rem 1.5rem;
+  color: white;
+  background-color: hsl(195, 86%, 46%);
+  border-radius: 15px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  font-family: "Bree Serif", serif !important;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .contact-section .right-side {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 990px) {
+  .contact-section .right-side {
+    border-radius: 10px;
+  }
+
+  .contact-section .form-control {
+    width: 100%;
+  }
+  .contact-container {
+    width: 100%;
+  }
+  .contact-section .left-side {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* @media (max-width: 1199px) {
+  .contact-section .right-side {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1345px) {
+  .contact-section .right-side {
+    border-radius: 51% 49% 70% 30% / 30% 30% 70% 70%;
+  }
+} */
